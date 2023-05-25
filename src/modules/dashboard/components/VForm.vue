@@ -53,7 +53,7 @@
                                 <!--end col-->
                                 <div class="col-lg-12">
                                     <div class="text-end">
-                                        <button type="button" @click="update" class="btn btn-primary ">Enviar
+                                        <button type="button" @click="update" class="btn btn-primary " style="cursor: pointer;">Enviar
                                         </button>
                                     </div>
                                 </div>
