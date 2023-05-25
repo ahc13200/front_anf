@@ -80,11 +80,9 @@
     let isFinished = ref(false);
 
     function loadData() {
-        console.log("Ejecute load data")
         // use this way:
         loading.value = true
         axios.get('/services/person').then(data => {
-            console.log('person data', data)
             list.value = data.data
             loading.value = false
         })

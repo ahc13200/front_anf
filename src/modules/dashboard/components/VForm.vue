@@ -82,11 +82,9 @@
             immediate: true,
             onSuccess: async () => {
                 await refresh()
-                console.log("Refresque")
 
             },
             onFinish: () => {
-                console.log("voa limpiar")
                 person.id = null
                 person.last_name = ""
                 person.first_name = ""
