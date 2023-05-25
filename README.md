@@ -1,4 +1,4 @@
-# app_kwikvet
+# app_anf
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -44,3 +44,16 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+### Variables de entorno
+VITE_PORT=3100
+VITE_PUBLIC_PATH=/
+VITE_DROP_CONSOLE=false
+VITE_USE_PWA=false
+VITE_GLOB_APP_TITLE=anf
+VITE_GLOB_APP_SHORT_NAME=anf
+VITE_LEGACY=false
+VITE_BUILD_COMPRESS=gzip
+VITE_API_URL=http://localhost/ANF_Laravel/public/api
+VITE_CSS_PROCESS=UNO
