@@ -1,0 +1,71 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+  ],
+  "no-unref": "off",
+  "allowJs": true,
+  "noUnusedLocals": true,
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "ESNext",
+      "WebWorker"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "noImplicitReturns": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "types": [
+      "node",
+      "vite/client",
+      "vue/ref-macros"
+    ],
+    "typeRoots": [
+      "./node_modules/@types/",
+      "./src/types"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "~a/*": [
+        "src/assets/*"
+      ]
+    }
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**/*.js"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
